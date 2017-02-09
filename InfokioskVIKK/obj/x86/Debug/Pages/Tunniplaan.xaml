@@ -19,7 +19,7 @@
                     </StackPanel>
                 </PivotItem.Header>
                 <StackPanel>
-                    <TextBlock Text="Sisu1"
+                    <TextBlock x:ConnectionId='1' Text="Sisu1"
                                Name="sisuBlock"></TextBlock>
                 </StackPanel>
             </PivotItem>
@@ -46,3 +46,4 @@
         </Pivot>
     </Grid>
 </Page>
+

@@ -20,7 +20,7 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Frame      Grid.Row="1"
+        <Frame x:ConnectionId='1'      Grid.Row="1"
                     Grid.Column="1"
                     Grid.RowSpan="2"
                     Grid.ColumnSpan="2"
@@ -31,11 +31,11 @@
         </Frame>
 
         <RelativePanel Grid.Row="0">
-            <Button Name="backButton" 
+            <Button x:ConnectionId='9' Name="backButton" 
                     FontFamily="Segoe MDL2 Assets" 
                     Content="&#xE72B;"
                     FontSize="30" 
-                    Click="backButton_Click"
+                                            
                     Width="50"
                     Foreground="Crimson"
                     Background="LemonChiffon">
@@ -43,11 +43,11 @@
         </RelativePanel>
 
         <RelativePanel Grid.Row="1">
-            <Button Name="hamburgerButton" 
+            <Button x:ConnectionId='8' Name="hamburgerButton" 
                     FontFamily="Segoe MDL2 Assets" 
                     Content="&#xE700;"
                     FontSize="30" 
-                    Click="hamburgerButton_Click"
+                                                 
                     Width="50"
                     Foreground="Brown"
                     Background="LemonChiffon">
@@ -55,7 +55,7 @@
 
         </RelativePanel>
 
-        <SplitView  Name="MySplitView"
+        <SplitView x:ConnectionId='2'  Name="MySplitView"
                     Grid.Row="2"
                     Grid.ColumnSpan="2"
                     DisplayMode="CompactOverlay"
@@ -66,12 +66,12 @@
 
             <SplitView.Pane>
 
-                <ListBox SelectionMode="Single"
+                <ListBox x:ConnectionId='3' SelectionMode="Single"
                          Name="IconsListBox" 
-                         SelectionChanged="IconsListBox_SelectionChanged"
+                                                                         
                          Background="LemonChiffon"
                          >
-                    <ListBoxItem Name="AvalehtBoxItem">
+                    <ListBoxItem x:ConnectionId='4' Name="AvalehtBoxItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="26"
@@ -88,7 +88,7 @@
                             </TextBlock>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="UudisedBoxItem">
+                    <ListBoxItem x:ConnectionId='5' Name="UudisedBoxItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="26"
@@ -103,7 +103,7 @@
                             </TextBlock>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="TunniplaanBoxItem">
+                    <ListBoxItem x:ConnectionId='6' Name="TunniplaanBoxItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="26"
@@ -118,7 +118,7 @@
                             </TextBlock>
                         </StackPanel>
                     </ListBoxItem>
-                    <ListBoxItem Name="KontaktidBoxItem">
+                    <ListBoxItem x:ConnectionId='7' Name="KontaktidBoxItem">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                        FontSize="26"
@@ -139,3 +139,4 @@
         </SplitView>
     </Grid>
 </Page>
+

@@ -44,10 +44,12 @@ namespace InfokioskVIKK
             {
                 contentFrame.Navigate(typeof(Pages.Kontakt));
             }
+
             else if (TunniplaanBoxItem.IsSelected)
             {
                 contentFrame.Navigate(typeof(Pages.Tunniplaan));
             }
+
             else if (UudisedBoxItem.IsSelected)
             {
                 contentFrame.Navigate(typeof(Pages.Uudised));
